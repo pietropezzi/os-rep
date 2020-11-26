@@ -1,5 +1,8 @@
 #!/bin/bash
 
+#this script does the same thing as 'es1.sh'
+#the only different thing is the for part.
+
 mkdir BUTTAMI
 touch BUTTAMI/"*" BUTTAMI/"**" BUTTAMI/"***" BUTTAMI/";;"
 

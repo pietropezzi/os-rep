@@ -1,2 +1,0 @@
-This lesson just makes you create your first script and also
-introduces you to new shell commands like rm, set and mkdir.

@@ -1,2 +1,0 @@
-In this lesson the goal its just to introduce you to the linux shell.
-It explains commands like cd and ls. So i would say this lesson is really basic.
