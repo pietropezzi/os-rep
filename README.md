@@ -1,7 +1,10 @@
 ### os-rep
 <<<<<<< HEAD
+<<<<<<< HEAD
 All Operating Systems course exercises.
 =======
+=======
+>>>>>>> 3513d9187cd7d26cf7b7fe937e6b92489401d6e7
 **Repository's purpose:**
 This repository is mainly just a way for me to get used to using git, i also use it to learn how to write proper english, hopefully what i just wrote is good enough.
 
