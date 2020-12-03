@@ -18,17 +18,38 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
+/*
+ * check for thread_create error msg
+ */
 #include <errno.h>
+
+/*
+ * this gives us uintptr_t
+ */
 #include <stdint.h>
+
+/*
+ *  PRIiPTR
+ */
 #include <inttypes.h>
+
+/*
+ * create a string to store the
+ * message to store the erro message
+ * given by strerror_r
+ */ 
 #include <string.h>
+/*
+ * This gives us pthread_create, pthread_join
+ * and pthread_t 
+ */
 #include <pthread.h>
 
 #define N_THREADS 1000
 #define MSG_LEN 100
 
 void *t_Action(void *args){
-	printf("Index %" PRIuPTR ".\n", (uintptr_t)args);
+	printf("Index %" PRIiPTR ".\n", (uintptr_t)args);
 	pthread_exit(NULL);
 }
 
@@ -48,7 +69,7 @@ int main(void){
 		 * Creating 1000 threads
 		 */
 		for(t=0;t<N_THREADS;t++,t0++){
-			printf("Creating thread n %" PRIuPTR ".\n", t0);
+			printf("Creating thread n %" PRIiPTR ".\n", t0);
 			ERR_cod = pthread_create ( &threads[t],NULL,t_Action, (void *)t0 );
 			if (ERR_cod) {
 				char msg[MSG_LEN];
